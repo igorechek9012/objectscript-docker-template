@@ -12,12 +12,12 @@ ClassMethod OnPage() As %Status
 ClassMethod header() As %Status
 {
   &HTML<
-  <html>
-    <head>
-      <script type="text/javascript" src="webix/webix.min.js" ></script>
-      <link rel="stylesheet" type="text/css" href="webix/webix.min.css">
-      <link rel="stylesheet" href="https://cdn.materialdesignicons.com/2.7.94/css/materialdesignicons.css?v=7.2.0" type="text/css" charset="utf-8">
-    </head>
+    <html>
+      <head>
+        <script type="text/javascript" src="webix/webix.min.js" ></script>
+        <link rel="stylesheet" type="text/css" href="webix/webix.min.css">
+        <link rel="stylesheet" href="https://cdn.materialdesignicons.com/2.7.94/css/materialdesignicons.css?v=7.2.0" type="text/css" charset="utf-8">
+      </head>
   >
 
   Quit $$$OK
@@ -81,7 +81,7 @@ var ui_template = {
             $$("$sidebar1").toggle();
           }
         },
-        { view: "label", label: "IRIS example web application for test purpose"},
+        { view: "label", label: "IRIS example web application for test purpose."},
       ]
     },
     { 

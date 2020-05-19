@@ -1,6 +1,8 @@
 Class FCE.Person Extends %Persistent
 {
 
+Property numD As %Double;
+
 Property Address As User.Address;
 
 Property Document As User.Document;
@@ -21,6 +23,12 @@ Storage Default
 </Value>
 <Value name="4">
 <Value>Document</Value>
+</Value>
+<Value name="5">
+<Value>num</Value>
+</Value>
+<Value name="6">
+<Value>numD</Value>
 </Value>
 </Data>
 <DataLocation>^FCE.PersonD</DataLocation>

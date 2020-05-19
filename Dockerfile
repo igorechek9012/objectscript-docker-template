@@ -10,11 +10,13 @@ COPY irisapp/webix /usr/irissys/csp/irisapp/webix
 WORKDIR /opt/irisapp
 RUN chown ${ISC_PACKAGE_MGRUSER}:${ISC_PACKAGE_IRISGROUP} /opt/irisapp
 
-USER irisowner
+COPY irissession.sh /
+RUN chmod +x /irissession.sh 
+
+USER ${ISC_PACKAGE_MGRUSER}
 
 COPY  Installer.cls .
 COPY  src src
-COPY irissession.sh /
 COPY irisapp/webix /usr/irissys/csp/user/codebase
 
 SHELL ["/irissession.sh"]
